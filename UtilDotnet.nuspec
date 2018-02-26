@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>UtilDotnet</id>
+    <version>1.0.0</version>
+    <authors>Sebastian Hönel</authors>
+    <owners>Sebastian Hönel</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <description>A common library used for projects that make use of NHibernate and Fluent NHibernate.</description>
+    <copyright>2018 Sebastian Hönel</copyright>
+    <tags>NHibernate, Fluent Nhibernate, Data factory</tags>
+    <repository type="Github" url="https://github.com/MrShoenel/util-dotnet" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Extensions" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Logging" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="NHibernate" version="5.0.3" exclude="Build,Analyzers" />
+        <dependency id="FluentNHibernate" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SQLite" version="1.0.107" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\repos\mrsh-util-dotnet\Data\bin\Debug\netstandard2.0\Data.dll" target="lib\netstandard2.0\Data.dll" />
+    <file src="C:\repos\mrsh-util-dotnet\Extensions\bin\Debug\netstandard2.0\Extensions.dll" target="lib\netstandard2.0\Data.dll" />
+    <file src="C:\repos\mrsh-util-dotnet\Logging\bin\Debug\netstandard2.0\Logging.dll" target="lib\netstandard2.0\Data.dll" />
+  </files>
+</package>
