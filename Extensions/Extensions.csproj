@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>sh.UtilDotnet.Extensions</PackageId>
+    <Authors>Sebastian Hönel</Authors>
+    <Company>HoenelDev</Company>
+    <Description>A common library that contains Extension-methods that are commonly used.</Description>
+    <Copyright>2018 Sebastian Hönel</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/MrShoenel/util-dotnet-data</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>Extension, methods</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

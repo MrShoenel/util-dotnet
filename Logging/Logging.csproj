@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>sh.UtilDotnet.Logging</PackageId>
+    <Authors>Sebastian Hönel</Authors>
+    <Company>HoenelDev</Company>
+    <Description>A common library used for projects that use basic logging (based on Microsoft.Extensions.Logging)</Description>
+    <Copyright>2018 Sebastian Hönel</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/MrShoenel/util-dotnet</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>Logging</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

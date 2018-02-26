@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>UtilDotnet.Data</PackageId>
+    <PackageId>sh.UtilDotnet.Data</PackageId>
     <Authors>Sebastian Hönel</Authors>
     <Company>HoenelDev</Company>
     <Product />
@@ -12,9 +12,9 @@
     <Copyright>2018 Sebastian Hönel</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl />
-    <RepositoryUrl>https://github.com/MrShoenel/util-dotnet-data</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MrShoenel/util-dotnet</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <PackageTags>NHibernate, Fluent Nhibernate, Data factory</PackageTags>
+    <PackageTags>NHibernate, Fluent Nhibernate, DataFactory</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
