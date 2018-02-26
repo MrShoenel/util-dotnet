@@ -17,6 +17,10 @@
     <PackageTags>NHibernate, Fluent Nhibernate, Data factory</PackageTags>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Data.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.0" />
     <PackageReference Include="NHibernate" Version="5.0.3" />
