@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>UtilDotnet.Data</PackageId>
+    <Authors>Sebastian Hönel</Authors>
+    <Company>HoenelDev</Company>
+    <Product />
+    <Description>A common library used for projects that make use of NHibernate and Fluent NHibernate.</Description>
+    <Copyright>2018 Sebastian Hönel</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl />
+    <RepositoryUrl>https://github.com/MrShoenel/util-dotnet-data</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageTags>NHibernate, Fluent Nhibernate, Data factory</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="2.1.0" />
+    <PackageReference Include="NHibernate" Version="5.0.3" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.107" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Extensions\Extensions.csproj" />
+    <ProjectReference Include="..\Logging\Logging.csproj" />
+  </ItemGroup>
+
+</Project>
