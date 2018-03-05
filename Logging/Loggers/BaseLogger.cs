@@ -33,6 +33,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 
 
@@ -50,21 +51,23 @@ namespace Logging.Loggers
 		protected static Lazy<IDictionary<Type, String>> lazyLoadedTypes = new Lazy<IDictionary<Type, String>>(() =>
 		{
 			var dict = new Dictionary<Type, String>();
-
-			//foreach (var type in AppDomain.CurrentDomain.GetAssemblies().SelectMany(asmbly =>
-			//{
-			//	try
-			//	{
-			//		return asmbly.GetTypes();
-			//	}
-			//	catch
-			//	{
-			//		return Enumerable.Empty<Type>();
-			//	}
-			//}))
-			//{
-			//	dict[type] = type.Name;
-			//}
+			foreach (var type in DependencyContext.Default.RuntimeLibraries.Where(lib =>
+			{
+				return lib.Name == nameof(Logging) || lib.Dependencies.Any(d => d.Name.StartsWith(nameof(Logging)));
+			}).SelectMany(lib =>
+			{
+				try
+				{
+					return Assembly.Load(new AssemblyName(lib.Name)).GetTypes();
+				}
+				catch
+				{
+					return Enumerable.Empty<Type>();
+				}
+			}))
+			{
+				dict[type] = type.Name;
+			}
 
 			var set = new HashSet<String>();
 			var typesToRename = new List<Type>();

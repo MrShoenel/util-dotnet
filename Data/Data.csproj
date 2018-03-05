@@ -15,6 +15,7 @@
     <RepositoryUrl>https://github.com/MrShoenel/util-dotnet</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
     <PackageTags>NHibernate, Fluent Nhibernate, DataFactory</PackageTags>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -24,12 +25,9 @@
   <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.0" />
     <PackageReference Include="NHibernate" Version="5.0.3" />
+    <PackageReference Include="sh.UtilDotnet.Extensions" Version="1.0.0" />
+    <PackageReference Include="sh.UtilDotnet.Logging" Version="1.0.1" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.107" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Extensions\Extensions.csproj" />
-    <ProjectReference Include="..\Logging\Logging.csproj" />
   </ItemGroup>
 
 </Project>
